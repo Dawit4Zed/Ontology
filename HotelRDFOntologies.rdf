@@ -1,0 +1,843 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14/"
+     xml:base="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-14="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#accomodates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#accomodates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <rdfs:comment>Hotel accomodates user</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#gets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#gets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <rdfs:comment>Hotel gets review</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#gives -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#gives">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <rdfs:comment>user gives reviews</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <rdfs:comment>Hotel has Hotel type</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#presented -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#presented">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking"/>
+        <rdfs:comment>Hotel presented booking</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#reserve -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#reserve">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking"/>
+        <rdfs:comment>user reserve booking</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#booking_platform_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#booking_platform_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_amenties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_amenties">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_room_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_room_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_type_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_type_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_type_target_market -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_type_target_market">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_website -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#hotel_website">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#review_rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#review_rating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#review_text -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#review_text">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#user_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#user_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Abdiisa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Abdiisa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <untitled-ontology-14:gives rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Spectacular_ski_chalet_with_top-notch_service"/>
+        <untitled-ontology-14:reserve rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking.com"/>
+        <untitled-ontology-14:user_name>Abdiisa</untitled-ontology-14:user_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Agoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Agoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking"/>
+        <untitled-ontology-14:booking_platform_name>Agoda</untitled-ontology-14:booking_platform_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Airbnb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Airbnb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking"/>
+        <untitled-ontology-14:booking_platform_name>Airbnb</untitled-ontology-14:booking_platform_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Amazing_mountain_views_and_peaceful_surroundings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Amazing_mountain_views_and_peaceful_surroundings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Amazing mountain views and peaceful surroundings</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Beachfront -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Beachfront">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <untitled-ontology-14:hotel_type_name>Beachfront</untitled-ontology-14:hotel_type_name>
+        <untitled-ontology-14:hotel_type_target_market>Affluent travelers</untitled-ontology-14:hotel_type_target_market>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Beachfront_Bungalow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Beachfront_Bungalow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <untitled-ontology-14:accomodates rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Abdiisa"/>
+        <untitled-ontology-14:gets rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Spectacular_ski_chalet_with_top-notch_service"/>
+        <untitled-ontology-14:has rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Beachfront"/>
+        <untitled-ontology-14:presented rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking.com"/>
+        <untitled-ontology-14:hotel_amenties>Beachfront outdoor shower</untitled-ontology-14:hotel_amenties>
+        <untitled-ontology-14:hotel_description>The Beachfront Bungalow is a charming seaside retreat, nestled along the sandy shores with breathtaking views of the ocean. This cozy accommodation offers a serene escape for travelers seeking relaxation and tranquility. Featuring a rustic yet comfortable design, the bungalow provides a private haven where guests can unwind to the sound of crashing waves and gentle sea breezes. With direct access to the beach, guests can enjoy leisurely strolls along the shoreline, soak up the sun, or indulge in water activities such as swimming and snorkeling. Whether lounging on the private veranda or enjoying a cozy evening by the fireplace, the Beachfront Bungalow promises an idyllic coastal getaway filled with unforgettable moments.</untitled-ontology-14:hotel_description>
+        <untitled-ontology-14:hotel_location>Maui</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_name>Beachfront_Bungalow</untitled-ontology-14:hotel_name>
+        <untitled-ontology-14:hotel_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.00</untitled-ontology-14:hotel_price>
+        <untitled-ontology-14:hotel_room_type>Bungalow</untitled-ontology-14:hotel_room_type>
+        <untitled-ontology-14:hotel_website>https://www.booking.com/hotel/es/beachfront-bungalow.html?lang=en-us&amp;soz=1&amp;lang_changed=1</untitled-ontology-14:hotel_website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Beautiful_location_and_friendly_staff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Beautiful_location_and_friendly_staff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Beautiful location, but service needs improvement</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking.com -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking.com">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking"/>
+        <untitled-ontology-14:booking_platform_name>Booking.com</untitled-ontology-14:booking_platform_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Boutique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Boutique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <untitled-ontology-14:hotel_type_name>Boutique</untitled-ontology-14:hotel_type_name>
+        <untitled-ontology-14:hotel_type_target_market>Youthful, trendy travelers</untitled-ontology-14:hotel_type_target_market>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Budget -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Budget">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <untitled-ontology-14:hotel_type_name>Budget</untitled-ontology-14:hotel_type_name>
+        <untitled-ontology-14:hotel_type_target_market>Cost-conscious travelers</untitled-ontology-14:hotel_type_target_market>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Budget_Motel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Budget_Motel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <untitled-ontology-14:accomodates rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Zekiya"/>
+        <untitled-ontology-14:gets rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#The_room_was_clean_and_comfortable"/>
+        <untitled-ontology-14:has rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Luxury"/>
+        <untitled-ontology-14:presented rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Expedia"/>
+        <untitled-ontology-14:hotel_amenties>Basic amenties</untitled-ontology-14:hotel_amenties>
+        <untitled-ontology-14:hotel_description>The Budget Motel offers comfortable and affordable lodging for travelers looking to stretch their vacation budget without compromising on quality. Our no-frills approach provides guests with clean and functional rooms equipped with essential amenities for a convenient stay. Whether you&apos;re traveling for business or leisure, our motel offers a welcoming environment and attentive service to ensure a hassle-free experience. Conveniently located near major highways or attractions, the Budget Motel provides a convenient home base for exploring the area while keeping your travel expenses in check. Enjoy a comfortable night&apos;s rest without breaking the bank at our budget-friendly establishment.</untitled-ontology-14:hotel_description>
+        <untitled-ontology-14:hotel_location>Las Vegas</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_name>Budget_Motel</untitled-ontology-14:hotel_name>
+        <untitled-ontology-14:hotel_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600.00</untitled-ontology-14:hotel_price>
+        <untitled-ontology-14:hotel_room_type>Standard</untitled-ontology-14:hotel_room_type>
+        <untitled-ontology-14:hotel_website>https://budget-motel.ch/en/motel.html</untitled-ontology-14:hotel_website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Business -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Business">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <untitled-ontology-14:hotel_type_name>Business</untitled-ontology-14:hotel_type_name>
+        <untitled-ontology-14:hotel_type_target_market>Business travelers</untitled-ontology-14:hotel_type_target_market>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Charming_atmosphere_and_highly_recommend -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Charming_atmosphere_and_highly_recommend">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.00</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Charming atmosphere, highly recommend</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#City_Center_Inn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#City_Center_Inn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <untitled-ontology-14:accomodates rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Dawit"/>
+        <untitled-ontology-14:gets rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Enjoyed_my_stay_and_will_definitely_come_back"/>
+        <untitled-ontology-14:has rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Business"/>
+        <untitled-ontology-14:presented rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels.com"/>
+        <untitled-ontology-14:hotel_amenties>Parking and Wifi</untitled-ontology-14:hotel_amenties>
+        <untitled-ontology-14:hotel_description>The City Center Inn is a convenient and budget-friendly accommodation nestled in the heart of the city. Offering simple yet comfortable rooms, our inn provides travelers with a cozy retreat after a day of exploring the vibrant cityscape. Situated within walking distance of major attractions, dining establishments, and entertainment venues, our prime location makes it easy for guests to immerse themselves in the bustling urban environment. Whether you&apos;re here for business or leisure, our friendly staff is dedicated to ensuring your stay is pleasant and hassle-free. With affordable rates and a central location, City Center Inn is the perfect choice for travelers seeking convenience and value during their city adventures.</untitled-ontology-14:hotel_description>
+        <untitled-ontology-14:hotel_location>Chicago</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_name>City_Center_Inn</untitled-ontology-14:hotel_name>
+        <untitled-ontology-14:hotel_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120.00</untitled-ontology-14:hotel_price>
+        <untitled-ontology-14:hotel_room_type>Double</untitled-ontology-14:hotel_room_type>
+        <untitled-ontology-14:hotel_website>https://www.citycenterinn.com/</untitled-ontology-14:hotel_website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Dawit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Dawit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <untitled-ontology-14:gives rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Enjoyed_my_stay_and_will_definitely_come_back"/>
+        <untitled-ontology-14:reserve rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels.com"/>
+        <untitled-ontology-14:user_name>Dawit</untitled-ontology-14:user_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Desta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Desta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <untitled-ontology-14:gives rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Overpriced_for_what_you_get"/>
+        <untitled-ontology-14:reserve rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Airbnb"/>
+        <untitled-ontology-14:user_name>Desta</untitled-ontology-14:user_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Eco-friendly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Eco-friendly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <untitled-ontology-14:hotel_type_name>Eco-friendly</untitled-ontology-14:hotel_type_name>
+        <untitled-ontology-14:hotel_type_target_market>Environmentally-conscious travelers</untitled-ontology-14:hotel_type_target_market>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Eco-friendly_Lodge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Eco-friendly_Lodge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <untitled-ontology-14:accomodates rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hiwot"/>
+        <untitled-ontology-14:gets rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Great_hotel_and_wonderful_service!"/>
+        <untitled-ontology-14:has rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Budget"/>
+        <untitled-ontology-14:presented rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Airbnb"/>
+        <untitled-ontology-14:hotel_amenties>Solar powered, organic farm</untitled-ontology-14:hotel_amenties>
+        <untitled-ontology-14:hotel_description>The Eco-Friendly Lodge is a sustainable haven nestled amidst nature&apos;s beauty, offering travelers a unique and environmentally conscious retreat. Our lodge is designed with a commitment to minimizing our ecological footprint while providing guests with a comfortable and rejuvenating experience. Surrounded by lush greenery and breathtaking scenery, our eco-friendly accommodations blend seamlessly with the natural landscape.
+
+Here at the Eco-Friendly Lodge, we prioritize eco-friendly practices such as utilizing renewable energy sources, implementing water conservation measures, and promoting waste reduction and recycling initiatives. Our accommodations feature eco-friendly am</untitled-ontology-14:hotel_description>
+        <untitled-ontology-14:hotel_location>Portland</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_name>Eco-friendly Lodge</untitled-ontology-14:hotel_name>
+        <untitled-ontology-14:hotel_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">130.00</untitled-ontology-14:hotel_price>
+        <untitled-ontology-14:hotel_room_type>Cabin</untitled-ontology-14:hotel_room_type>
+        <untitled-ontology-14:hotel_website>https://www.tripadvisor.com/Hotel_Review-g1082186-d606564-Reviews-Gyreum_Eco_Lodge-Castlebaldwin_County_Sligo_Western_Ireland.html</untitled-ontology-14:hotel_website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Endelebu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Endelebu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <untitled-ontology-14:gives rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Poor_experience_would_not_recommend"/>
+        <untitled-ontology-14:reserve rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking.com"/>
+        <untitled-ontology-14:user_name>Endelebu</untitled-ontology-14:user_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Enjoyed_my_stay_and_will_definitely_come_back -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Enjoyed_my_stay_and_will_definitely_come_back">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Enjoyed my stay, will definitely come back</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Excellent_amenities_and_cozy_atmosphere. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Excellent_amenities_and_cozy_atmosphere.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Excellent amenities and cozy atmosphere</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Expedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Expedia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking"/>
+        <untitled-ontology-14:booking_platform_name>Expedia</untitled-ontology-14:booking_platform_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Family-friendly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Family-friendly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <untitled-ontology-14:hotel_type_target_market>Families with children of all ages</untitled-ontology-14:hotel_type_target_market>
+        <untitled-ontology-14:hotel_type_target_market>Family-friendly</untitled-ontology-14:hotel_type_target_market>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Family_Retreat_Resort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Family_Retreat_Resort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <untitled-ontology-14:accomodates rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Medanit"/>
+        <untitled-ontology-14:gets rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Perfect_for_a_family_vacation"/>
+        <untitled-ontology-14:has rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Resort"/>
+        <untitled-ontology-14:presented rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Agoda"/>
+        <untitled-ontology-14:hotel_amenties>Pool, kids club, playground</untitled-ontology-14:hotel_amenties>
+        <untitled-ontology-14:hotel_description>The Family Retreat Resort is a haven designed to cater to the needs and desires of families seeking quality time together in a relaxing and entertaining environment. Nestled amidst picturesque surroundings, our resort offers a wide array of amenities and activities suitable for guests of all ages.</untitled-ontology-14:hotel_description>
+        <untitled-ontology-14:hotel_location>Boston</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_name>Family Retreat Resort</untitled-ontology-14:hotel_name>
+        <untitled-ontology-14:hotel_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">350.00</untitled-ontology-14:hotel_price>
+        <untitled-ontology-14:hotel_room_type>Family Suite</untitled-ontology-14:hotel_room_type>
+        <untitled-ontology-14:hotel_website>https://www.tripadvisor.com/Hotel_Review-g666950-d576339-Reviews-Van_der_Valk_Hotel_Gilze_Tilburg-Gilze_North_Brabant_Province.html</untitled-ontology-14:hotel_website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Grand_Hotel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Grand_Hotel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <untitled-ontology-14:accomodates rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Lensa"/>
+        <untitled-ontology-14:gets rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Amazing_mountain_views_and_peaceful_surroundings"/>
+        <untitled-ontology-14:has rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Historic"/>
+        <untitled-ontology-14:presented rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking.com"/>
+        <untitled-ontology-14:hotel_amenties>Swimming pool, gym, spa</untitled-ontology-14:hotel_amenties>
+        <untitled-ontology-14:hotel_description>The Grand Hotel epitomizes luxury, elegance, and sophistication, offering guests an opulent retreat in the heart of the city. As you step into our lavish lobby, you&apos;ll be greeted by timeless architecture, exquisite decor, and impeccable service.</untitled-ontology-14:hotel_description>
+        <untitled-ontology-14:hotel_location>New York</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_name>Grand Hotel</untitled-ontology-14:hotel_name>
+        <untitled-ontology-14:hotel_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.00</untitled-ontology-14:hotel_price>
+        <untitled-ontology-14:hotel_room_type>Suite</untitled-ontology-14:hotel_room_type>
+        <untitled-ontology-14:hotel_website>https://www.grandhoteldowntown.com/en/</untitled-ontology-14:hotel_website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Great_beach_resort_experience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Great_beach_resort_experience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Great beach resort experience</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Historic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Historic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <untitled-ontology-14:hotel_type_name>Historic</untitled-ontology-14:hotel_type_name>
+        <untitled-ontology-14:hotel_type_target_market>History enthusiasts</untitled-ontology-14:hotel_type_target_market>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Historic_Inn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Historic_Inn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <untitled-ontology-14:accomodates rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Solomon"/>
+        <untitled-ontology-14:gets rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Beautiful_location_and_friendly_staff"/>
+        <untitled-ontology-14:has rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Boutique"/>
+        <untitled-ontology-14:presented rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels.com"/>
+        <untitled-ontology-14:hotel_amenties>Free breakfast, historic charm</untitled-ontology-14:hotel_amenties>
+        <untitled-ontology-14:hotel_location>Boston</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_name>Historic Inn</untitled-ontology-14:hotel_name>
+        <untitled-ontology-14:hotel_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160.00</untitled-ontology-14:hotel_price>
+        <untitled-ontology-14:hotel_room_type>Queen</untitled-ontology-14:hotel_room_type>
+        <untitled-ontology-14:hotel_website>https://www.booking.com/hotel/us/saint-augustine-107-anastasia-boulevard.nl.html</untitled-ontology-14:hotel_website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hiwot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hiwot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <untitled-ontology-14:gives rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Great_hotel_and_wonderful_service!"/>
+        <untitled-ontology-14:reserve rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Airbnb"/>
+        <untitled-ontology-14:user_name>Hiwot</untitled-ontology-14:user_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels.com -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels.com">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking"/>
+        <untitled-ontology-14:booking_platform_name>Hotels.com</untitled-ontology-14:booking_platform_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Lensa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Lensa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <untitled-ontology-14:gives rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Amazing_mountain_views_and_peaceful_surroundings"/>
+        <untitled-ontology-14:reserve rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking.com"/>
+        <untitled-ontology-14:user_name>Lensa</untitled-ontology-14:user_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Lovely_cabin_getaway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Lovely_cabin_getaway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Lovely cabin getaway</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Luxury -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Luxury">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <untitled-ontology-14:hotel_type_name>Luxury</untitled-ontology-14:hotel_type_name>
+        <untitled-ontology-14:hotel_type_target_market>high-end clientele</untitled-ontology-14:hotel_type_target_market>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Medanit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Medanit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <untitled-ontology-14:gives rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Perfect_for_a_family_vacation"/>
+        <untitled-ontology-14:reserve rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Agoda"/>
+        <untitled-ontology-14:user_name>Medanit</untitled-ontology-14:user_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Mesfin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Mesfin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <untitled-ontology-14:gives rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Charming_atmosphere_and_highly_recommend"/>
+        <untitled-ontology-14:reserve rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels.com"/>
+        <untitled-ontology-14:user_name>Mesfin</untitled-ontology-14:user_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Mountain_Lodge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Mountain_Lodge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <untitled-ontology-14:accomodates rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Mesfin"/>
+        <untitled-ontology-14:gets rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Charming_atmosphere_and_highly_recommend"/>
+        <untitled-ontology-14:has rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Mountain_retreat"/>
+        <untitled-ontology-14:presented rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels.com"/>
+        <untitled-ontology-14:hotel_amenties>Ski-in/ski-out, hot tub</untitled-ontology-14:hotel_amenties>
+        <untitled-ontology-14:hotel_description>The Mountain Lodge is a rustic retreat nestled amidst the breathtaking beauty of the mountains, offering guests a cozy and secluded getaway in nature&apos;s embrace. Perched atop a scenic vista or nestled within a wooded glen, our lodge provides an idyllic setting for relaxation and outdoor adventure.</untitled-ontology-14:hotel_description>
+        <untitled-ontology-14:hotel_location>Aspen</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_name>Mountain_Lodge</untitled-ontology-14:hotel_name>
+        <untitled-ontology-14:hotel_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250.00</untitled-ontology-14:hotel_price>
+        <untitled-ontology-14:hotel_room_type>Chalet</untitled-ontology-14:hotel_room_type>
+        <untitled-ontology-14:hotel_website>https://www.mountainlodge.tirol/</untitled-ontology-14:hotel_website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Mountain_retreat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Mountain_retreat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <untitled-ontology-14:hotel_type_name>Mountain_retreat</untitled-ontology-14:hotel_type_name>
+        <untitled-ontology-14:hotel_type_target_market>Outdoor enthusiasts</untitled-ontology-14:hotel_type_target_market>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Ocean_View_Resort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Ocean_View_Resort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <untitled-ontology-14:accomodates rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Desta"/>
+        <untitled-ontology-14:gets rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Overpriced_for_what_you_get"/>
+        <untitled-ontology-14:has rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Eco-friendly"/>
+        <untitled-ontology-14:presented rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Airbnb"/>
+        <untitled-ontology-14:hotel_amenties>Beach access, restaurant</untitled-ontology-14:hotel_amenties>
+        <untitled-ontology-14:hotel_description>The Ocean View Resort is a serene coastal getaway nestled along the pristine shores, offering guests a blissful escape with breathtaking views of the sparkling ocean. Situated in a picturesque location, our resort provides a tranquil retreat where the sound of crashing waves and gentle sea breezes set the tone for relaxation and rejuvenation</untitled-ontology-14:hotel_description>
+        <untitled-ontology-14:hotel_location>Miami</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_name>Ocean View Resort</untitled-ontology-14:hotel_name>
+        <untitled-ontology-14:hotel_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200.00</untitled-ontology-14:hotel_price>
+        <untitled-ontology-14:hotel_room_type>Standard</untitled-ontology-14:hotel_room_type>
+        <untitled-ontology-14:hotel_website>https://www.ovresort.com/</untitled-ontology-14:hotel_website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Overpriced_for_what_you_get -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Overpriced_for_what_you_get">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.00</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Overpriced for what you get</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Perfect_for_a_family_vacation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Perfect_for_a_family_vacation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Perfect for a family vacation</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Poor_experience_would_not_recommend -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Poor_experience_would_not_recommend">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Poor experience, wouldn&apos;t recommend</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Resort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Resort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels_Type"/>
+        <untitled-ontology-14:hotel_type_name>Resort</untitled-ontology-14:hotel_type_name>
+        <untitled-ontology-14:hotel_type_target_market>Leisure travelers</untitled-ontology-14:hotel_type_target_market>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Riverside_Hotel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Riverside_Hotel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels"/>
+        <untitled-ontology-14:accomodates rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Endelebu"/>
+        <untitled-ontology-14:gets rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Poor_experience_would_not_recommend"/>
+        <untitled-ontology-14:has rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Family-friendly"/>
+        <untitled-ontology-14:presented rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Booking.com"/>
+        <untitled-ontology-14:hotel_amenties>River view, restaurant</untitled-ontology-14:hotel_amenties>
+        <untitled-ontology-14:hotel_description>The Riverside Hotel is a tranquil oasis nestled along the banks of a picturesque river, offering guests a serene escape from the hustle and bustle of city life. Situated in a scenic location, our hotel provides a peaceful retreat where the soothing sounds of flowing water and the rustling of trees create a sense of calm and relaxation.</untitled-ontology-14:hotel_description>
+        <untitled-ontology-14:hotel_location>RiverSide Hotel</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_location>San Francisco</untitled-ontology-14:hotel_location>
+        <untitled-ontology-14:hotel_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180.00</untitled-ontology-14:hotel_price>
+        <untitled-ontology-14:hotel_room_type>Suite</untitled-ontology-14:hotel_room_type>
+        <untitled-ontology-14:hotel_website>https://www.riversidehotel.com/</untitled-ontology-14:hotel_website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Solomon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Solomon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <untitled-ontology-14:gives rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Beautiful_location_and_friendly_staff"/>
+        <untitled-ontology-14:reserve rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Hotels.com"/>
+        <untitled-ontology-14:user_name>Solomon</untitled-ontology-14:user_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Spectacular_ski_chalet_with_top-notch_service -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Spectacular_ski_chalet_with_top-notch_service">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Spectacular ski chalet with top-notch service</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#The_room_was_clean_and_comfortable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#The_room_was_clean_and_comfortable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.00</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>The room was clean and comfortable</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Zekiya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Zekiya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#User"/>
+        <untitled-ontology-14:gives rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#The_room_was_clean_and_comfortable"/>
+        <untitled-ontology-14:reserve rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Expedia"/>
+        <untitled-ontology-14:user_name>Zekiya</untitled-ontology-14:user_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Great_hotel_and_wonderful_service! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Great_hotel_and_wonderful_service!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dave/ontologies/2024/1/untitled-ontology-14#Review"/>
+        <untitled-ontology-14:review_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</untitled-ontology-14:review_rating>
+        <untitled-ontology-14:review_text>Great hotel, wonderful experience</untitled-ontology-14:review_text>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
